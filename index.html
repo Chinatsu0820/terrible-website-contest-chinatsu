@@ -14,26 +14,30 @@
     <header>
 
         <!--NAV BAR-->
-        <!--flex　親１-->
+        <!--flex parent1-->
         <nav>
-            <!--flex　親２A-->
+            <!--flex parent2A-->
             <section class="nav-title">
-                <img class="title-img" src="imgs/cool.gif">
-                <section>
+                <img class="title-img" src="imgs/cool.gif" alt="">
+                <section class="nav-title-text">
                     <h1>Tokyo Unveiled</h1>
                     <p>Explore the Heart of Japan</p>
                 </section>
-                <img class="title-img" src="imgs/cool.gif">
+                <img class="title-img" src="imgs/cool.gif" alt="">
             </section>
-            <img class="navribbon-img" src="imgs/flower-ribbon.png">
-            <img class="navribbon-img" src="imgs/flower-ribbon.png">
-            <img class="navribbon-img" src="imgs/flower-ribbon.png">
-            <!--flex　親２B-->
+            <img class="navribbon-img" src="imgs/flower-ribbon.png" alt="">
+            <img class="navribbon-img de" src="imgs/flower-ribbon.png" alt="">
+            <img class="navribbon-img de" src="imgs/flower-ribbon.png" alt="">
+            <!--flex parent2B-->
             <div class="nav-button">
-                <a href=""><img class="navbutton-img" src="imgs/nav-news.gif"></a>
-                <a href=""><img class="navbutton-img" src="imgs/nav-guestbook.gif"></a>
-                <a href=""><img class="navbutton-img" src="imgs/nav-bbs.gif"></a>
-                <a href=""><img class="navbutton-img" src="imgs/nav-faq.gif"></a>
+                <a href="#news"><img class="navbutton-img" id="nav-news" src="imgs/nav-news.gif"
+                        alt="This is a button to jump the news page."></a>
+                <a href="#guide"><img class="navbutton-img" id="nav-guidebook" src="imgs/nav-guestbook.gif"
+                        alt="This is a button to jump the guide page."></a>
+                <a href="#bbs"><img class="navbutton-img" id="nav-nav-bbs" src="imgs/nav-bbs.gif"
+                        alt="This is a button to jump the bbs page."></a>
+                <a href="pages/faq.html"><img class="navbutton-img" src="imgs/nav-faq.gif"
+                        alt="This is a button to jump the faq page."></a>
             </div>
         </nav>
 
@@ -42,8 +46,8 @@
             <p>
                 Welcome to Tokyo Unveiled! On this website, we will share with you the charm of Tokyo.</p>
             <p>Last updated: March 16, 2019.</p>
-            <button>clap!</button>
-            <button>count?</button>
+            <button>&#9825;</button>
+            <button>&#9829; </button>
         </section>
     </header>
 
@@ -53,41 +57,46 @@
 
         <!--HOME LEFT-->
         <section class="home-menu1">
-            <h2>GUEST BOOK</h2>
+            <h2 id="guide">GUIDE BOOK</h2>
             <!-- flex 親 -->
             <div class="menu1-message">
-                <img class="menu1-img1" src="imgs/shiba.png">
+                <img class="menu1-img1" src="imgs/shiba.png" alt="This is a picture of a sitting Shibainu">
                 <p>\Sorry! This is under constraction/</p>
-                <img class="menu1-img1" src="imgs/worker.png" alt="This is an image of a worer who wears work clothes.">
+                <img class="menu1-img1" src="imgs/worker.png"
+                    alt="This is a picture of a worer who wears work clothes.">
             </div>
             <ul class="menu1-ul">
                 <li class="menu1-li">
                     <a class="place" href="">AKIHABARA</a>
-                    <img class="menu1-a-img" src="imgs/plate-rightarrow.gif">
-                    <img class="menu1-p-img" src="imgs/p-akihabara.jpg">
+                    <img class="menu1-a-img" src="imgs/plate-rightarrow.gif" alt="">
+                    <img class="menu1-p-img" src="imgs/p-akihabara.jpg" alt="This is a picture of Akihabara, Tokyo.">
                 </li>
                 <li class="menu1-li">
-                    <img class="menu1-p-img" src="imgs/p-asakusa.jpg">
-                    <img class="menu1-a-img" src="imgs/plate-leftarrow.gif">
+                    <img class="menu1-p-img" src="imgs/p-asakusa.jpg"
+                        alt="This is a picture of Kaminarimon in Asakusa, Tokyo.">
+                    <img class="menu1-a-img" src="imgs/plate-leftarrow.gif" alt="">
                     <a class="place" href="pages/guidebook.html">ASAKUSA</a>
                 </li>
                 <li class="menu1-li">
                     <a class="place" href="">GINZA</a>
-                    <img class="menu1-a-img" src="imgs/plate-rightarrow.gif">
-                    <img class="menu1-p-img" src="imgs/p-ginza.jpg">
+                    <img class="menu1-a-img" src="imgs/plate-rightarrow.gif" alt="">
+                    <img class="menu1-p-img" src="imgs/p-ginza.jpg" alt="This is a picture of Ginza, Tokyo.">
                 </li>
                 <li class="menu1-li">
-                    <img class="menu1-p-img" src="imgs/p-harajuku.jpg">
-                    <img class="menu1-a-img" src="imgs/plate-leftarrow.gif">
+                    <img class="menu1-p-img" src="imgs/p-harajuku.jpg"
+                        alt="This is a picture of Takeshita street in Harajuku, Tokyo.">
+                    <img class="menu1-a-img" src="imgs/plate-leftarrow.gif" alt="">
                     <a class="place" href="">HARAJUKU</a>
                 </li>
                 <li class="menu1-li">
                     <a class="place" href="">SHIBUYA</a>
-                    <img class="menu1-a-img" src="imgs/plate-rightarrow.gif">
-                    <img class="menu1-p-img" src="imgs/p-shibuya.jpg">
+                    <img class="menu1-a-img" src="imgs/plate-rightarrow.gif" alt="">
+                    <img class="menu1-p-img" src="imgs/p-shibuya.jpg"
+                        alt="This is a picture of Scramble intersection in Shibuya, Tokyo.">
                 </li>
                 <li class="menu1-li">
-                    <img class="menu1-p-img" src="imgs/p-tukishima.jpg">
+                    <img class="menu1-p-img" src="imgs/p-tukishima.jpg"
+                        alt="This is a picture of Tsukishima-monja street in Tsukishima, Tokyo.">
                     <img class="menu1-a-img" src="imgs/plate-leftarrow.gif">
                     <a class="place" href="">TSUKISHIMA</a>
                 </li>
@@ -96,14 +105,14 @@
 
         <!--HOME CENTER-->
         <section class="home-center">
-            <h2>BBS</h2>
+            <h2 id="bbs">BBS</h2>
             <p>This is a BBS for sharing some information or asking queistions!</p>
             <form method="get" action="#" class="search_container">
                 <input type="text" size="25" placeholder="ex.best cafe in Tokyo">
                 <input type="submit" value="search">
             </form>
             <div class="bbs-container">
-                <img class="bbs-img" src="imgs/bbs.png">
+                <img class="bbs-img" src="imgs/bbs.png" alt="This is a picture of a board.">
                 <div class="bbs-text">
                     <p>Q: I would like to enjoy night views from indoors in Tokyo.
                         Do you have any recommended places?</p>
@@ -117,45 +126,46 @@
                         or Tokyo Tower for breathtaking night views.</p>
                 </div>
             </div>
-            <img class="center-img1" src="imgs/flower-under.png">
+            <img class="center-img1" src="imgs/flower-under.png" alt="">
         </section>
 
         <!--HOME RIGHT-->
         <section class="home-menu2">
-            <h2>NEWS</h2>
+            <h2 id="news">NEWS</h2>
             <ul>
-                <li class="menu2-li"><time datetime="2019-01-02">2019年01月02日</time>
+                <li class="menu2-li"><time datetime="2019-01-02">January 2nd, 2019</time>
                     <img class="menu2-img1" src="imgs/cat-close.gif" onmouseover="this.src='imgs/cat-open.gif'"
-                        onMouseOut="this.src='imgs/cat-close.gif'">
-                    <img class="menu2-img2" src="imgs/new.gif">
+                        onMouseOut="this.src='imgs/cat-close.gif'" alt="This is an icon of a cute cat.">
+                    <img class="menu2-img2" src="imgs/new.gif" alt="">
                     <p>Happy New Year! Let's have fun this year in Tokyo, too.</p>
                 </li>
 
-                <li class="menu2-li"><time datetime="2018-11-20">2018年11月20日</time>
+                <li class="menu2-li"><time datetime="2018-11-20">November 20th, 2018</time>
                     <img class="menu2-img1" src="imgs/cat-close.gif" onmouseover="this.src='imgs/cat-open.gif'"
-                        onMouseOut="this.src='imgs/cat-close.gif'">
-                    <p>We have updated a new page about Christmas<img class="menu2-img3" src="imgs/santa.png"> events in
+                        onMouseOut="this.src='imgs/cat-close.gif'" alt="This is an icon of a cute cat.">
+                    <p>We have updated a new page about Christmas<img class="menu2-img3" src="imgs/santa.png" alt="This is a picture of Santa Claus."> events in
                         2018.</p>
                 </li>
 
-                <li class="menu2-li"><time datetime="2018-07-01">2018年07月01日</time>
+                <li class="menu2-li"><time datetime="2018-07-01">July 1st, 2018</time>
                     <img class="menu2-img1" src="imgs/cat-close.gif" onmouseover="this.src='imgs/cat-open.gif'"
-                        onMouseOut="this.src='imgs/cat-close.gif'">
-                    <p><img class="menu2-img3" src="imgs/sun.png">Summer is coming!<img class="menu2-img3"
-                            src="imgs/sun.png">
+                        onMouseOut="this.src='imgs/cat-close.gif'" alt="This is an icon of a cute cat.">
+                    <p><img class="menu2-img3" src="imgs/sun.png" alt="This is a picture of a smiling sun.">
+                        Summer is coming!
+                        <img class="menu2-img3" src="imgs/sun.png" alt="This is a picture of a smiling sun.">
                         Do you have any plans for the summer?</p>
                 </li>
 
-                <li class="menu2-li"><time datetime="2018-02-25">2018年02月25日</time>
+                <li class="menu2-li"><time datetime="2018-02-25">February 25th, 2018</time>
                     <img class="menu2-img1" src="imgs/cat-close.gif" onmouseover="this.src='imgs/cat-open.gif'"
-                        onMouseOut="this.src='imgs/cat-close.gif'">
+                        onMouseOut="this.src='imgs/cat-close.gif'" alt="This is an icon of a cute cat.">
                     <p>We have updated this year's cherry blossom viewing spot information.<img class="menu2-img3"
-                            src="imgs/sakura.png"></p>
+                            src="imgs/sakura.png" alt="This is a picture of cherry blossom."></p>
                 </li>
 
-                <li class="menu2-li"><time datetime="2017-01-01">2017年1月01日</time>
+                <li class="menu2-li"><time datetime="2017-01-01">January 1st, 2017</time>
                     <img class="menu2-img1" src="imgs/cat-close.gif" onmouseover="this.src='imgs/cat-open.gif'"
-                        onMouseOut="this.src='imgs/cat-close.gif'">
+                        onMouseOut="this.src='imgs/cat-close.gif'" alt="This is an icon of a cute cat.">
                     <p>Happy New Year! Let's have fun this year in Tokyo, too.</p>
                 </li>
             </ul>
@@ -166,17 +176,21 @@
     <!--FOOTER-->
     <footer>
         <div>
-            <p class="footer-title"><img class="footer-img1" src="imgs/goldfish.png">Tokyo Unveiled</p>
+            <p class="footer-title"><img class="footer-img1" src="imgs/goldfish.png" 
+                alt="This is a picture of two golffish.">
+                Tokyo Unveiled</p>
             <p>&#169;Tokyo Tourism Association &#40;fake&#41;</p>
         </div>
         <div>
-            <a href="index.html"><img class="footerbutton-img" src="imgs/board-home.gif"></a>
-            <a href="mailto:dummy@tokyo.com"><img class="footerbutton-img" src="imgs/board-mail.gif"></a>
-            <img class="footerbutton-img" id="link" src="imgs/board-link.gif"></a>
+            <a href="index.html"><img class="footerbutton-img" src="imgs/board-home.gif" 
+                alt="This is a link to the home page."></a>
+            <a href="mailto:dummy@tokyo.com"><img class="footerbutton-img" src="imgs/board-mail.gif" 
+                alt="This is a link to send an email to us."></a>
+            <img class="footerbutton-img" id="link" src="imgs/board-link.gif" alt="This is a link to open the bubble of SNS links."></a>
             <div class="link-bubble">
-                <a href="https://facebook.com"><img class="bubblebutton-img" src="imgs/icon-facebook.png"></a>
-                <a href="https://instagram.com"><img class="bubblebutton-img" src="imgs/icon-instagram.png"></a>
-                <a href="https://twitter.com"><img class="bubblebutton-img" src="imgs/icon-twitter.png"></a>
+                <a href="https://facebook.com"><img class="bubblebutton-img" src="imgs/icon-facebook.png" alt="This is a link to facebook."></a>
+                <a href="https://instagram.com"><img class="bubblebutton-img" src="imgs/icon-instagram.png" alt="This is a link to instagram."></a>
+                <a href="https://twitter.com"><img class="bubblebutton-img" src="imgs/icon-twitter.png" alt="This is a link to twitter."></a>
             </div>
         </div>
         <div class="footer-child">
