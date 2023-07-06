@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,7 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: 'Indie Flower', cursive;
 }
 
 ul {
@@ -28,6 +32,15 @@ nav {
 .nav-title {
     display: flex;
     align-items: center;
+}
+
+.nav-title-text {
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgb(251, 36, 158);
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 .nav-button {
@@ -54,12 +67,24 @@ nav {
     background-size: contain;
 }
 
+/*----for mobile----*/
+@media screen and (max-width: 480px) {
+    .nav-button {
+        flex-direction: column;
+    }
+
+    .navribbon-img.de {
+        display: none;
+    }
+}
+
+
 
 /* ------------------------HOME MAIN---------------------------- */
 .homemain {
     display: grid;
-    grid-template-areas: 
-    "home1 home2 home3";
+    grid-template-areas:
+        'home1 home2 home3';
 }
 
 /* HOME LEFT */
@@ -119,13 +144,15 @@ nav {
 
 .bbs-img {
     width: 100%;
+    overflow: hidden;
+
 }
 
 .bbs-text {
     position: absolute;
     top: 3%;
     padding: 5vw;
-    font-size: 90%;
+    font-size: 70%;
 }
 
 
@@ -160,6 +187,16 @@ time {
     font-weight: bold;
 }
 
+/*----for mobile----*/
+@media screen and (max-width: 480px) {
+    .homemain {
+        grid-template-areas:
+            'home1'
+            'home2'
+            'home3';
+    }
+}
+
 /* ------------------------GUIDE MAIN---------------------------- */
 
 .guidemain {
@@ -189,6 +226,147 @@ time {
     color: yellow;
     font-weight: bold;
 }
+
+/* ------------------------FAQ MAIN---------------------------- */
+
+.faq {
+    background-image: url(../imgs/back-questions.png);
+}
+
+/* label */
+.faq-label {
+    width: 50%;
+    background-color: blueviolet;
+    border: 0.5rem solid pink;
+    text-align: center;
+    margin: 2vw auto;
+    color: white;
+}
+
+/*questions*/
+.faq-container {
+    display: grid;
+    grid-template-columns: 15% 35% 15% 35%;
+    padding: 10vw;
+    gap: 2vw;
+    grid-template-areas:
+        'i1 q1 i4 a1'
+        'i2 q2 i5 a2'
+        'i3 q3 i6 a3';
+}
+
+#img-a {
+    grid-area: i1;
+}
+
+#img-b {
+    grid-area: i2;
+}
+
+#img-c {
+    grid-area: i3;
+}
+
+#question-a {
+    grid-area: q1;
+}
+
+#question-b {
+    grid-area: q2;
+}
+
+#question-c {
+    grid-area: q3;
+}
+
+#img-d {
+    grid-area: i4;
+}
+
+#img-e {
+    grid-area: i5;
+}
+
+#img-f {
+    grid-area: i6;
+}
+
+#answer-a {
+    grid-area: a1;
+}
+
+#answer-b {
+    grid-area: a2;
+}
+
+#answer-c {
+    grid-area: a3;
+}
+
+.faq-people,
+.answer-people {
+    width: 5vh;
+}
+
+.question {
+    background-color: rgb(127, 255, 212);
+    border-radius: 20%;
+    display: none;
+    padding: 2vw;
+}
+
+.answer {
+    background-color: rgb(255, 179, 0);
+    border-radius: 20%;
+    display: none;
+    padding: 2vw;
+}
+
+/* it appears only during clicking */
+#img-a:active~#question-a {
+    display: grid;
+}
+
+#img-b:active~#question-b {
+    display: grid;
+}
+
+#img-c:active~#question-c {
+    display: grid;
+}
+
+#img-d:active~#answer-a {
+    display: grid;
+}
+
+#img-e:active~#answer-b {
+    display: grid;
+}
+
+#img-f:active~#answer-c {
+    display: grid;
+}
+
+/*----for mobile----*/
+@media screen and (max-width: 480px) {
+    .faq-label {
+        width: 80%;
+    }
+
+    .faq-container {
+        padding: 2vw;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'i1 q1 q1'
+            'a1 a1 i4'
+            'i2 q2 q2'
+            'a2 a2 i5'
+            'i3 q3 q3'
+            'a3 a3 i6'
+    }
+}
+
 
 /* ------------------------FOOTER---------------------------- */
 
@@ -227,11 +405,11 @@ footer {
 }
 
 .bubblebutton-img {
-    width: 2vw;
+    width: 2vh;
     margin: 1vw;
 }
 
-#link:hover +.link-bubble {
+#link:hover+.link-bubble {
     display: block;
 }
 
@@ -239,4 +417,19 @@ footer {
     background-color: yellow;
     border-radius: 10%;
     margin: 1vw;
+}
+
+
+/*----for mobile----*/
+@media screen and (max-width: 480px) {
+    .footerbutton-img {
+        display: block;
+        width: 10vw;
+        margin: 2vw;
+    }
+
+    .link-bubble {
+        bottom: -200vh;
+        right: 30%;
+    }
 }
